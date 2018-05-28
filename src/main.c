@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "board_print_plain.h"
+
 
 int main()
 {
@@ -16,10 +16,10 @@ int main()
         while (colour == 0) {
             while ((check_move == 0) && (colour == 0)) {
                 if (count % 2 == 0) {
-                    printf ("Белые ходят:");
+                    printf ("Ход белых:");
                 }
                 else
-                    printf("Черные ходят:");
+                    printf("Ход черных:");
                 while (f != 0) {
                     scanf("%c%d %c%d", &i, &j, &i1, &j1);
                     while(getchar() != '\n');
